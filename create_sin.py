@@ -2,7 +2,29 @@
 # Test creating sine wave and geberating notes of the scale
 # John Lynch
 # Jan./Feb. 2021
+# Needs Python 3.8+
 # Example tune: adedc+baAAABC+DAgf+edc+bc+babc+dedc+baAAABC+DAgf+edc+ddddd
+
+# Usage example:
+# 21:34: audio $ python create_sin.py 
+# Wave type? (sin, sq or saw):  saw
+# Enter tune:  aedcbaabccdefededcd
+# Enter tune:  
+# --------------------
+# 21:35: audio $ play tune_saw_aedcbaabccdefededcd.wav 
+
+# tune_saw_aedcbaabccdefededcd.wav:
+
+#  File Size: 1.68M     Bit Rate: 2.82M
+#   Encoding: F.P. PCM      
+#   Channels: 1 @ 54-bit   
+# Samplerate: 44100Hz      
+# Replaygain: off         
+#   Duration: 00:00:04.75  
+
+# In:100%  00:00:04.75 [00:00:00.00] Out:209k  [      |      ] Hd:0.0 Clip:209k 
+# play WARN sox: `tune_saw_aedcbaabccdefededcd.wav' input clipped 209395 samples
+# Done.
 
 import sys
 import numpy as np
